@@ -31,8 +31,8 @@ contract crowdFund {
     function makeContribution() public payable {
         uint value = msg.value;
         require (msg.value > 0, "Cannot Contribute Negative Ether");
-        require (msg.sender.balance >= value, "Not Enough in Account");
-        require (deadline >= block.timestamp, "Funding has ended");
+        require (msg.sender.balance <= value, "Not Enough in Account");
+        require (block.timestamp <= deadline,  "Funding has ended");
         availableFunds += value;
         contributions[msg.sender] += value;
     }

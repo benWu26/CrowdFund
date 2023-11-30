@@ -1,13 +1,13 @@
-import { HardhatUserConfig } from "hardhat/config";
+/* import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
 
 const config: HardhatUserConfig = {
   solidity: "0.8.19",
 };
 
-export default config; 
+export default config; */
 
-/* import { HardhatUserConfig } from "hardhat/config";
+import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
 
 const config: HardhatUserConfig = {
@@ -29,4 +29,4 @@ module.exports = {
       accounts: [`0x${PRIVATE_KEY}`]
     }
   },
-} */
+} 
